@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbbdb34d-4e2d-4c41-9e96-d7e4d437872a" name="Default Changelist" comment="" />
+    <list default="true" id="bbbdb34d-4e2d-4c41-9e96-d7e4d437872a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1632077637722</updated>
       <workItem from="1632077639105" duration="6000" />
-      <workItem from="1632077798968" duration="9910000" />
+      <workItem from="1632077798968" duration="10217000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1632248903782</created>
@@ -63,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632249435994</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="delete package-lock">
+      <created>1632250315653</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632250315653</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,6 +82,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
     <MESSAGE value="add git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add git ignore" />
+    <MESSAGE value="delete package-lock" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete package-lock" />
   </component>
 </project>
