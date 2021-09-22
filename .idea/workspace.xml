@@ -44,7 +44,7 @@
       <updated>1632077637722</updated>
       <workItem from="1632077639105" duration="6000" />
       <workItem from="1632077798968" duration="10504000" />
-      <workItem from="1632250851978" duration="3451000" />
+      <workItem from="1632250851978" duration="4466000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1632248903782</created>
@@ -95,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632251963225</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactor add">
+      <created>1632322418888</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1632322418888</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +116,7 @@
     <MESSAGE value="add script start" />
     <MESSAGE value="refactor" />
     <MESSAGE value="add login, password heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="add login, password heroku" />
+    <MESSAGE value="refactor add" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor add" />
   </component>
 </project>

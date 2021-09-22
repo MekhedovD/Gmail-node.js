@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3010;
+const port = process.env.PORT || 3010;
 const nodemailer = require("nodemailer");
 
 const cors = require('cors');
@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 let smpt_login = process.env.SMPT_LOGIN || "---";
-let smpt_password = process.env.SMPT_PASWORD || "---";
+let smpt_password = process.env.SMPT_PASSWORD || "---";
 
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
