@@ -1,9 +1,8 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
-const port = process.env.PORT || 3010;
 const nodemailer = require("nodemailer");
 
-const cors = require('cors');
 const bodyParser = require('body-parser');
 
 
@@ -11,9 +10,6 @@ app.use(cors({origin: 'http://localhost:3001/'}));
 
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
-
-let smpt_login = process.env.SMPT_LOGIN || "---";
-let smpt_password = process.env.SMPT_PASSWORD || "---";
 
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
@@ -24,8 +20,8 @@ let transporter = nodemailer.createTransport({
 		rejectUnauthorized: false
 	},
 	auth: {
-		user: smpt_login, // generated ethereal user
-		pass: smpt_password // generated ethereal password
+		user: 'mekhedov.d@mail.ru', // generated ethereal user
+		pass: 'mekhedov' // generated ethereal password
 	},
 });
 
