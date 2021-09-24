@@ -7,7 +7,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 
-app.use(cors({origin: 'http://localhost:3000/'}));
+app.use(cors({origin: 'http://localhost:3001/'}));
 
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
@@ -48,13 +48,11 @@ app.post('/sendMessage', async (req, res) => {
       <div>${message}</div>`, // html body`
 	});
 
-	console.log("Message sent: %s", info.messageId);
-
 	// res.send(res.body)
 	res.send('send message mail')
 })
 
-// let port = process.env.PORT || 3010;
+let port = process.env.PORT || 3010;
 
 app.listen(port, () => {
 	console.log(`Example app listening at http://localhost:${port}`)
