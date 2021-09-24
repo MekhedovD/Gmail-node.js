@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbbdb34d-4e2d-4c41-9e96-d7e4d437872a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +43,7 @@
       <updated>1632077637722</updated>
       <workItem from="1632077639105" duration="6000" />
       <workItem from="1632077798968" duration="10504000" />
-      <workItem from="1632250851978" duration="10428000" />
+      <workItem from="1632250851978" duration="10933000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1632248903782</created>
@@ -159,7 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1632493413718</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="jhvhfdsfsdf">
+      <created>1632493911143</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1632493911143</updated>
+    </task>
+    <task id="LOCAL-00018" summary="hcgb">
+      <created>1632494056850</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1632494056850</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +190,8 @@
     <MESSAGE value="refact" />
     <MESSAGE value="dsf" />
     <MESSAGE value="jhvh" />
-    <option name="LAST_COMMIT_MESSAGE" value="jhvh" />
+    <MESSAGE value="jhvhfdsfsdf" />
+    <MESSAGE value="hcgb" />
+    <option name="LAST_COMMIT_MESSAGE" value="hcgb" />
   </component>
 </project>

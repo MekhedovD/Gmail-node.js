@@ -5,7 +5,7 @@ const nodemailer = require("nodemailer");
 
 const app = express();
 
-app.use(cors({origin: 'http://localhost:3001'}));
+app.use(cors({origin: 'http://localhost:3001/'}));
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
