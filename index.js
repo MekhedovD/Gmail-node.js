@@ -6,7 +6,7 @@ const nodemailer = require("nodemailer");
 const bodyParser = require('body-parser');
 
 
-app.use(cors({origin: 'http://localhost:3001'}));
+app.use(cors({origin: 'http://localhost:3001/'}));
 
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
