@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbbdb34d-4e2d-4c41-9e96-d7e4d437872a" name="Default Changelist" comment="" />
+    <list default="true" id="bbbdb34d-4e2d-4c41-9e96-d7e4d437872a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +45,7 @@
       <updated>1632077637722</updated>
       <workItem from="1632077639105" duration="6000" />
       <workItem from="1632077798968" duration="10504000" />
-      <workItem from="1632250851978" duration="9685000" />
+      <workItem from="1632250851978" duration="10428000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1632248903782</created>
@@ -141,7 +145,21 @@
       <option name="project" value="LOCAL" />
       <updated>1632492845323</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="dsf">
+      <created>1632493205415</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1632493205415</updated>
+    </task>
+    <task id="LOCAL-00016" summary="jhvh">
+      <created>1632493413718</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1632493413718</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +176,8 @@
     <MESSAGE value="refactor password" />
     <MESSAGE value="refactor" />
     <MESSAGE value="refact" />
-    <option name="LAST_COMMIT_MESSAGE" value="refact" />
+    <MESSAGE value="dsf" />
+    <MESSAGE value="jhvh" />
+    <option name="LAST_COMMIT_MESSAGE" value="jhvh" />
   </component>
 </project>

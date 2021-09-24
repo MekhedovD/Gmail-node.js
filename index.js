@@ -1,13 +1,11 @@
 const express = require('express');
 const cors = require('cors');
-const app = express();
+const bodyParser = require('body-parser');
 const nodemailer = require("nodemailer");
 
-const bodyParser = require('body-parser');
-
+const app = express();
 
 app.use(cors({origin: 'http://localhost:3001/'}));
-
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
@@ -16,12 +14,11 @@ let transporter = nodemailer.createTransport({
 	service: "gmail",
 	secure: false,
 	port: 25,
-	tls: {
-		rejectUnauthorized: false
-	},
 	auth: {
 		user: 'mekhedov.d@mail.ru', // generated ethereal user
 		pass: 'mekhedov' // generated ethereal password
+	},tls: {
+		rejectUnauthorized: false
 	},
 });
 
@@ -29,7 +26,7 @@ app.get('/', (req, res) => { //post
 	res.send('Hello World!')
 })
 
-app.post('/sendMessage', async (req, res) => {
+app.post('/sendMessage', async function (req, res) {
 
 	let {name, email, message} = req.body
 
