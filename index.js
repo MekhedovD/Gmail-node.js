@@ -7,7 +7,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 
-app.use(cors());
+app.use(cors({origin: 'http://localhost:3000'}));
 
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
@@ -18,6 +18,8 @@ let smpt_password = process.env.SMPT_PASSWORD || "---";
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
 	service: "gmail",
+	secure: false,
+	port: 25,
 	tls: {
 		rejectUnauthorized: false
 	},
