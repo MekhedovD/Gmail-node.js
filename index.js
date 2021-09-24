@@ -5,9 +5,10 @@ const nodemailer = require("nodemailer");
 
 const app = express();
 
-app.use(cors({origin: 'http://localhost:3000/'}));
-app.use(bodyParser.urlencoded({extended: false}))
-app.use(bodyParser.json())
+app.use(cors());
+// app.use(cors({origin: 'http://localhost:3000/'}));
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
