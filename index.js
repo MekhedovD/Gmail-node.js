@@ -1,15 +1,19 @@
 const express = require('express');
-// const cors = require('cors');
-// const bodyParser = require('body-parser');
+const cors = require('cors');
+const bodyParser = require('body-parser');
 const nodemailer = require("nodemailer");
 
 const app = express();
 
 // app.use(cors());
-// // app.use(cors({origin: 'http://localhost:3000/'}));
-// app.use(bodyParser.urlencoded({extended: false}));
-// app.use(bodyParser.json());
-port = 3010;
+// app.use(cors({origin: 'http://localhost:3000/'}));
+app.use((req, res, next) => {
+	res.header('Access-Control-Allow-Origin', '*');
+	next();
+})
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
 	service: "gmail",
@@ -46,7 +50,7 @@ app.post('/sendMessage', async function (req, res) {
 	res.send('send message mail')
 })
 
-// let port = process.env.PORT || 3010;
+let port = process.env.PORT || 3010;
 
 app.listen(port, () => {
 	console.log(`Example app listening at http://localhost:${port}`)
