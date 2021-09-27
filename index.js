@@ -8,7 +8,7 @@ const port = process.env.PORT || 3010;
 const SMPT_LOGIN = process.env.SMTP_LOGIN || '---'
 const SMPT_PASSWORD = process.env.SMTP_PASSWORD || '---'
 
-app.use(cors());
+app.use(cors({origin: ['http:localhost:3000']}));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
