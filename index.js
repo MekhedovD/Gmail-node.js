@@ -4,12 +4,15 @@ const bodyParser = require('body-parser');
 const nodemailer = require("nodemailer");
 
 const app = express();
+let port = process.env.PORT || 3010;
+const SMPT_LOGIN = process.env.SMTP_LOGIN || '---'
+const SMPT_PASSWORD = process.env.SMTP_PASSWORD || '---'
 
 app.use(cors());
-app.use((req, res, next) => {
-	res.header('Access-Control-Allow-Origin', '*');
-	next();
-})
+// app.use((req, res, next) => {
+// 	res.header('Access-Control-Allow-Origin', '*');
+// 	next();
+// })
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
@@ -18,15 +21,15 @@ let transporter = nodemailer.createTransport({
 	service: "gmail",
 	auth: {
 		type: 'login',
-		user: 'my.dmitrym@gmail.com', // generated ethereal user
-		pass: 'RsTSs66G' // generated ethereal password
+		user: SMPT_LOGIN, // generated ethereal user
+		pass: SMPT_PASSWORD // generated ethereal password
 	}
 });
 
 
 
 app.get('/', (req, res) => { //post
-	res.send('Hello World! yoo')
+	res.send('Hello World! YOO')
 })
 
 app.post('/sendMessage', async function (req, res) {
@@ -48,7 +51,7 @@ app.post('/sendMessage', async function (req, res) {
 	res.send('send message mail')
 })
 
-let port = process.env.PORT || 3010;
+// let port = process.env.PORT || 3010;
 
 app.listen(port, () => {
 	console.log(`Example app listening at http://localhost:${port}`)
