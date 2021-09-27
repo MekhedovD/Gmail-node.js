@@ -4,15 +4,11 @@ const bodyParser = require('body-parser');
 const nodemailer = require("nodemailer");
 
 const app = express();
-let port = process.env.PORT || 3010;
+const port = process.env.PORT || 3010;
 const SMPT_LOGIN = process.env.SMTP_LOGIN || '---'
 const SMPT_PASSWORD = process.env.SMTP_PASSWORD || '---'
 
 app.use(cors());
-// app.use((req, res, next) => {
-// 	res.header('Access-Control-Allow-Origin', '*');
-// 	next();
-// })
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
