@@ -5,14 +5,14 @@ const nodemailer = require("nodemailer");
 
 const app = express();
 const port = process.env.PORT || 3010;
-const SMPT_LOGIN = process.env.SMTP_LOGIN || '---'
-const SMPT_PASSWORD = process.env.SMTP_PASSWORD || '---'
+console.log(process.env.PORT)
+const SMPT_LOGIN = process.env.SMTP_LOGIN || 'my.dmitrym@gmail.com'
+const SMPT_PASSWORD = process.env.SMTP_PASSWORD || 'RsTSs66G'
 
-var corsOptions = {
-	origin: ['http://localhost:3000'],
-	credentials: true,
-	methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE'] };
-app.use(cors());
+console.log(SMPT_LOGIN)
+console.log(SMPT_PASSWORD)
+
+app.use(cors({origin: ['http://localhost:3000']}))
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
@@ -36,16 +36,25 @@ app.post('/sendMessage', async function (req, res) {
 
 	let {name, email, message} = req.body
 
-	let info = await transporter.sendMail({
-		from: 'HR', // sender address
-		to: "mekhedov.d@mail.ru", // list of receivers
-		subject: "Testing GMAIL", // Subject line
-		// text: "Hello world?", // plain text body
-		html: `<b>Сообщение с Вашего портфолио</b>
+	console.log("Hello")
+	try {
+
+		let info = await transporter.sendMail({
+			from: 'HR', // sender address
+			to: "mekhedov.d@mail.ru", // list of receivers
+			subject: "Testing GMAIL", // Subject line
+			// text: "Hello world?", // plain text body
+			html: `<b>Сообщение с Вашего портфолио</b>
 			<div><b>name:</b> ${name}</div>
     	<div><b>email:</b> ${email}</div>
       <div>${message}</div>`, // html body`
-	});
+		});
+
+	} catch(e) {
+			console.log(e)
+		return res.status(500).send(e)
+	}
+
 
 	// res.send(res.body)
 	res.send('send message mail')
