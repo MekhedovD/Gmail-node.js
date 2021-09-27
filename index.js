@@ -5,8 +5,7 @@ const nodemailer = require("nodemailer");
 
 const app = express();
 
-// app.use(cors());
-// app.use(cors({origin: 'http://localhost:3000/'}));
+app.use(cors());
 app.use((req, res, next) => {
 	res.header('Access-Control-Allow-Origin', '*');
 	next();
@@ -17,15 +16,14 @@ app.use(bodyParser.json());
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
 	service: "gmail",
-	secure: false,
-	port: 25,
 	auth: {
-		user: 'd.mehedov2@gmail.com', // generated ethereal user
-		pass: 'dZ4qV5tZ' // generated ethereal password
-	},tls: {
-		rejectUnauthorized: false
-	},
+		type: 'login',
+		user: 'my.dmitrym@gmail.com', // generated ethereal user
+		pass: 'RsTSs66G' // generated ethereal password
+	}
 });
+
+
 
 app.get('/', (req, res) => { //post
 	res.send('Hello World! yoo')
