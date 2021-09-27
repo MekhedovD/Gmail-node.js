@@ -36,7 +36,6 @@ app.post('/sendMessage', async function (req, res) {
 
 	let {name, email, message} = req.body
 
-	console.log("Hello")
 	try {
 
 		let info = await transporter.sendMail({
