@@ -46,7 +46,7 @@
       <workItem from="1632250851978" duration="11615000" />
       <workItem from="1632496259888" duration="9586000" />
       <workItem from="1632756234717" duration="2981000" />
-      <workItem from="1632857327815" duration="3703000" />
+      <workItem from="1632857327815" duration="4552000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1632248903782</created>
@@ -279,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633003446695</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fix origin from heroku">
+      <created>1633003945242</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1633003945242</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +305,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="delete package-lock" />
     <MESSAGE value="add script start" />
     <MESSAGE value="add login, password heroku" />
     <MESSAGE value="refactor add" />
@@ -323,6 +329,7 @@
     <MESSAGE value="added cors" />
     <MESSAGE value="added cors02" />
     <MESSAGE value="fix origin from git" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix origin from git" />
+    <MESSAGE value="fix origin from heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix origin from heroku" />
   </component>
 </project>
