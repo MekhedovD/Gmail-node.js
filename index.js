@@ -12,7 +12,8 @@ const SMPT_PASSWORD = process.env.SMTP_PASSWORD || 'RsTSs66G'
 console.log(SMPT_LOGIN)
 console.log(SMPT_PASSWORD)
 
-app.use(cors({origin: ['http://localhost:3000']}))
+app.use(cors({origin: ['https://github.com/MekhedovD/my_portfolio.git']}))
+// app.use(cors({origin: ['http://localhost:3000']}))
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
