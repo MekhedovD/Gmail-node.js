@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbbdb34d-4e2d-4c41-9e96-d7e4d437872a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,8 @@
       <workItem from="1632250851978" duration="11615000" />
       <workItem from="1632496259888" duration="9586000" />
       <workItem from="1632756234717" duration="2981000" />
-      <workItem from="1632857327815" duration="4552000" />
+      <workItem from="1632857327815" duration="5167000" />
+      <workItem from="1633194466414" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1632248903782</created>
@@ -286,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633003945242</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="git">
+      <created>1633005162900</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1633005162900</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +313,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add script start" />
     <MESSAGE value="add login, password heroku" />
     <MESSAGE value="refactor add" />
     <MESSAGE value="refactor password" />
@@ -330,6 +337,7 @@
     <MESSAGE value="added cors02" />
     <MESSAGE value="fix origin from git" />
     <MESSAGE value="fix origin from heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix origin from heroku" />
+    <MESSAGE value="git" />
+    <option name="LAST_COMMIT_MESSAGE" value="git" />
   </component>
 </project>
